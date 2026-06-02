@@ -1,0 +1,24 @@
+{
+  "name": "n4-to-n2-japanese-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vue.js 教學網站：協助 N4 程度學習者建立升級到 N2 的學習路線、文法練習與自我檢核。",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "vite": "latest",
+    "vue": "latest",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^27.0.1",
+    "vitest": "^4.1.8"
+  }
+}

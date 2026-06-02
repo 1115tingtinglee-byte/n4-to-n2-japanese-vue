@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">學習循環</title>
+  <desc id="desc">輸入、練習、回饋、調整四個步驟。</desc>
+  <rect width="520" height="360" rx="32" fill="#fff7ed"/>
+  <g font-family="Inter, system-ui, sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="160" cy="110" r="62" fill="#fed7aa"/>
+    <text x="160" y="118" font-size="26" fill="#9a3412">輸入</text>
+    <circle cx="340" cy="110" r="62" fill="#bae6fd"/>
+    <text x="340" y="118" font-size="26" fill="#075985">練習</text>
+    <circle cx="340" cy="250" r="62" fill="#c7d2fe"/>
+    <text x="340" y="258" font-size="26" fill="#3730a3">回饋</text>
+    <circle cx="160" cy="250" r="62" fill="#bbf7d0"/>
+    <text x="160" y="258" font-size="26" fill="#166534">調整</text>
+  </g>
+  <path d="M220 110 H278" stroke="#64748b" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M340 172 V188" stroke="#64748b" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M280 250 H222" stroke="#64748b" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M160 188 V172" stroke="#64748b" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
