@@ -221,9 +221,9 @@ N4 到 N2 日文升級教室
 
 ### 作品連結
 
-- **GitHub Pages 網址**：{{GITHUB_PAGES_URL}}
-- **GitHub Repository**：{{GITHUB_REPO_URL}}
-- **示範影片**：{{GITHUB_PAGES_URL}}demo.mp4
+- **GitHub Pages 網址**：https://rrs4sf547b-cmyk.github.io/n4-to-n2-japanese-vue/
+- **GitHub Repository**：https://github.com/rrs4sf547b-cmyk/n4-to-n2-japanese-vue
+- **示範影片**：https://rrs4sf547b-cmyk.github.io/n4-to-n2-japanese-vue/demo.mp4
 
 ### 這個網站想教什麼、教誰
 

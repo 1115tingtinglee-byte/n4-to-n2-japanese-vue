@@ -35,4 +35,4 @@ npm run build
 
 ## GitHub Pages
 
-發布後網址：{{GITHUB_PAGES_URL}}
+發布後網址：https://rrs4sf547b-cmyk.github.io/n4-to-n2-japanese-vue/
