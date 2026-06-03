@@ -28,12 +28,29 @@
   </section>
 
   <section v-if="selected" class="panel detail-panel">
-    <div>
+    <div class="detail-header">
+      <div>
       <p class="eyebrow">第 {{ selected.week }} 週檢核</p>
       <h2>{{ selected.title }}</h2>
       <p>{{ selected.checkpoint }}</p>
+      </div>
+      <a :href="selected.video" target="_blank" rel="noreferrer">觀看相關影片搜尋結果</a>
     </div>
-    <a :href="selected.video" target="_blank" rel="noreferrer">觀看相關影片搜尋結果</a>
+
+    <div class="review-grid" aria-label="每週查看檢核重點">
+      <article class="review-card">
+        <h3>重點複習</h3>
+        <ul class="check-list">
+          <li v-for="focus in selected.reviewFocus" :key="focus">{{ focus }}</li>
+        </ul>
+      </article>
+      <article class="review-card">
+        <h3>練習題</h3>
+        <ol class="check-list numbered">
+          <li v-for="question in selected.practiceQuestions" :key="question">{{ question }}</li>
+        </ol>
+      </article>
+    </div>
   </section>
 </template>
 
@@ -50,7 +67,9 @@ const filteredRoadmap = computed(() => {
   const text = keyword.value.trim().toLowerCase()
   return roadmap.filter((item) => {
     const matchLevel = levelFilter.value === '全部' || item.level === levelFilter.value
-    const haystack = `${item.title} ${item.goal} ${item.tasks.join(' ')} ${item.phase}`.toLowerCase()
+    const reviewFocus = item.reviewFocus?.join(' ') ?? ''
+    const practiceQuestions = item.practiceQuestions?.join(' ') ?? ''
+    const haystack = `${item.title} ${item.goal} ${item.tasks.join(' ')} ${item.phase} ${reviewFocus} ${practiceQuestions}`.toLowerCase()
     const matchKeyword = !text || haystack.includes(text)
     return matchLevel && matchKeyword
   })

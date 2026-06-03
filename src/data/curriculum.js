@@ -7,6 +7,8 @@ export const roadmap = [
     goal: '先確認ます形、て形、ない形、た形與基本助詞能不能自然使用。這一步不是重讀 N4，而是找出會影響 N3/N2 閱讀的漏洞。',
     tasks: ['每天整理 8 個常用動詞變化', '用 は／が／を／に／で 各造 2 句', '把錯題寫成「為什麼錯」筆記'],
     checkpoint: '能看懂短篇生活文章，遇到基本變化不需要停下來查。',
+    reviewFocus: ['ます形／て形／ない形／た形的變化規則', 'は／が／を／に／で 的基本功能與常見錯誤', '短篇生活文章中的動詞原形與句子主詞'],
+    practiceQuestions: ['把「行く・食べる・見る・来る」改成て形、ない形和た形。', '用 は／が／を／に／で 各寫一句自己的生活例句。', '讀一篇短文，圈出 5 個動詞變化並寫出原形。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N4+grammar+助詞+動詞變化',
   },
   {
@@ -17,6 +19,8 @@ export const roadmap = [
     goal: 'N3 開始常出現語氣很像的句型。學習重點要從背中文意思，改成分辨使用情境、語氣強弱和句子位置。',
     tasks: ['比較 ようになる／ことになる', '整理 10 個表示變化的句型', '每個句型寫一個自己的例句'],
     checkpoint: '看到句型時能說出「誰做決定、語氣是客觀還是主觀」。',
+    reviewFocus: ['ようになる 與 ことになる 的語氣差異', '主觀決定、客觀安排與自然變化的判斷', '句型接續：動詞原形、ない形與名詞化'],
+    practiceQuestions: ['判斷 5 個例句是「自己決定」還是「被安排」。', '用 ようになる 寫 2 句能力或習慣變化。', '用 ことになる 寫 2 句課程或生活安排。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N3+grammar+ようになる+ことになる',
   },
   {
@@ -27,6 +31,8 @@ export const roadmap = [
     goal: '用短文練習推論上下文。N2 閱讀不會只問單字意思，而是問作者想法、段落關係和句子省略。',
     tasks: ['每天讀一篇 300 字日文短文', '圈出接續詞：しかし、つまり、それで', '用中文寫 3 句摘要'],
     checkpoint: '可以抓到文章主題和轉折，不會只逐字翻譯。',
+    reviewFocus: ['短文主題句的位置', 'しかし／つまり／それで 的段落功能', '用自己的話摘要，不逐字翻譯'],
+    practiceQuestions: ['讀一篇 300 字短文並寫出一句主旨。', '圈出文中所有接續詞，標註「轉折／說明／結果」。', '把文章內容整理成 3 句中文摘要。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N3+reading+practice',
   },
   {
@@ -37,6 +43,8 @@ export const roadmap = [
     goal: 'N2 單字量變大，如果只照字母或五十音背，容易忘。改用工作、社會、新聞、科技、心理等主題群來整理。',
     tasks: ['建立 5 個主題單字表', '每個單字搭配一個例句', '標記相近詞差異，例如 変更／変化／変換'],
     checkpoint: '看到文章主題時，能預測可能出現的單字群。',
+    reviewFocus: ['工作、社會、新聞、科技、心理五類主題單字', '相近詞的使用情境差異', '用例句記單字而不是只背中文'],
+    practiceQuestions: ['每個主題各整理 6 個單字並分類。', '挑 5 組相近詞，寫出差異和例句。', '看到一篇文章標題，先預測 5 個可能出現的單字。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+vocabulary+themes',
   },
   {
@@ -47,6 +55,8 @@ export const roadmap = [
     goal: 'N2 常見 に違いない、わけではない、というより 等句型，重點是判斷說話者態度，不只是翻成中文。',
     tasks: ['整理 8 個推測句型', '每題先猜語氣再看答案', '把錯題分成「語氣錯」或「接續錯」'],
     checkpoint: '能分辨肯定、否定、部分否定、強烈推測。',
+    reviewFocus: ['に違いない／わけではない／というより 的核心語氣', '肯定、否定、部分否定與修正說法', '錯題是語氣判斷錯還是接續錯'],
+    practiceQuestions: ['完成 8 題推測句型選擇題，先寫下判斷理由。', '把 3 句中文改寫成 に違いない 的日文句子。', '整理本週錯題，標記「語氣錯」或「接續錯」。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+grammar+に違いない+わけではない',
   },
   {
@@ -57,6 +67,8 @@ export const roadmap = [
     goal: '把 からすると、によると、に応じて、次第で 這類句型放在一起比較，學會看前後文的依據關係。',
     tasks: ['做一張「依據句型」比較表', '找出句子裡的判斷來源', '每個句型做 2 題替換練習'],
     checkpoint: '能說出句子是依照資料、立場、條件或變化來判斷。',
+    reviewFocus: ['からすると／によると／に応じて／次第で 的使用差異', '句子中的判斷來源與條件變化', '依據句型前後文的因果關係'],
+    practiceQuestions: ['把 4 個依據句型整理成比較表。', '讀 5 個例句，畫出判斷依據和結論。', '每個句型各完成 2 題替換練習。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+grammar+からすると+に応じて',
   },
   {
@@ -67,6 +79,8 @@ export const roadmap = [
     goal: 'N2 長文常把答案藏在轉折後面。閱讀時要判斷每段是在提出問題、補充理由、舉例，還是下結論。',
     tasks: ['每段旁邊寫「問題／理由／例子／結論」', '先看題目再讀文章', '把錯題答案句標回原文'],
     checkpoint: '長文不必每一句都懂，也能找到答案位置。',
+    reviewFocus: ['長文段落功能：問題、理由、例子、結論', '先看題目再定位答案的閱讀順序', '錯題答案句與原文線索的對照'],
+    practiceQuestions: ['讀一篇長文，在每段旁寫出段落功能。', '先看 3 題題目，再回文章標出答案位置。', '把錯題的正確答案句抄回筆記並寫原因。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+reading+strategy',
   },
   {
@@ -77,6 +91,8 @@ export const roadmap = [
     goal: 'N2 聽力常會先講條件，再改變決定。不要只聽到第一個答案就選，要注意最後誰要做什麼。',
     tasks: ['聽第一遍只抓人物與任務', '第二遍記理由和轉折', '整理「最後決定」關鍵詞'],
     checkpoint: '可以分辨提案、拒絕、妥協和最後決定。',
+    reviewFocus: ['聽力中的人物、任務與最後決定', 'でも／じゃあ／やっぱり 等轉折線索', '提案、拒絕、妥協的語氣差異'],
+    practiceQuestions: ['聽一題短聽力，第一遍只寫人物和任務。', '第二遍補上理由、轉折和最後決定。', '整理 5 個聽力轉折關鍵詞並各寫一句中文提示。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+listening+practice',
   },
   {
@@ -87,6 +103,8 @@ export const roadmap = [
     goal: '模擬考不是只看分數，而是找出失分模式。把錯題分成單字、文法、閱讀定位、聽力轉折四類。',
     tasks: ['完成一回 N2 模擬題', '錯題分類並寫原因', '挑最高錯誤類別重練 3 天'],
     checkpoint: '知道自己不是「全部都弱」，而是有明確優先順序。',
+    reviewFocus: ['單字、文法、閱讀定位、聽力轉折四類錯題', '模擬考分數背後的失分模式', '最高錯誤類別的補強順序'],
+    practiceQuestions: ['完成一回 N2 模擬題並記錄各大題分數。', '把錯題分成四類，寫出每類錯幾題。', '挑最多錯的一類，安排 3 天重練題目。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+mock+test+review',
   },
   {
@@ -97,6 +115,8 @@ export const roadmap = [
     goal: '最後一週不適合塞新內容。重點是複習錯題、維持閱讀速度、穩定睡眠與考試時間感。',
     tasks: ['每天複習 20 題舊錯題', '限時讀一篇文章', '聽一回短聽力並檢討'],
     checkpoint: '考前知道自己要先做什麼、放掉什麼，不被焦慮拖著走。',
+    reviewFocus: ['舊錯題高頻錯誤', '閱讀限時感與作答順序', '考前睡眠、時間分配與放棄策略'],
+    practiceQuestions: ['每天複習 20 題舊錯題並遮住答案重做。', '限時讀一篇文章，記錄完成時間和正確率。', '做一回短聽力，寫下錯題原因和下次提醒。'],
     video: 'https://www.youtube.com/results?search_query=JLPT+N2+exam+tips',
   },
 ]

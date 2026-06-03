@@ -155,7 +155,12 @@ input, select {
   font-weight: 800;
 }
 .lesson-card button:hover, .option-button:hover, .grammar-button:hover { transform: translateY(-1px); }
-.detail-panel { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.detail-panel { display: grid; gap: 22px; }
+.detail-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.detail-header h2 { margin: 0; }
+.review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.review-card { padding: 18px; border-radius: 22px; background: #f8fafc; }
+.review-card h3 { margin: 0 0 14px; color: #172033; }
 
 .grammar-sidebar { display: grid; gap: 12px; }
 .chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -199,5 +204,6 @@ dd { margin: 6px 0 0; color: #475569; line-height: 1.8; }
 
 @media (max-width: 860px) {
   .stats-grid { grid-template-columns: 1fr; }
-  .detail-panel { align-items: stretch; flex-direction: column; }
+  .detail-header { align-items: stretch; flex-direction: column; }
+  .review-grid { grid-template-columns: 1fr; }
 }
