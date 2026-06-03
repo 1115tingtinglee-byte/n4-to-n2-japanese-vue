@@ -30,6 +30,20 @@ describe('N4 to N2 teaching site', () => {
     expect(wrapper.text()).toContain('互動練習')
   })
 
+  it('shows the Kinkakuji themed hero on the home page', async () => {
+    const router = createRouter({ history: createMemoryHistory(), routes })
+    router.push('/')
+    await router.isReady()
+
+    const wrapper = mount(App, {
+      global: { plugins: [router] },
+    })
+
+    expect(wrapper.text()).toContain('京都金色學習路線')
+    expect(wrapper.text()).toContain('每週複習、練習題、錯題整理一起前進')
+    expect(wrapper.get('figure[aria-label="金閣寺風格主視覺"] img').attributes('src')).toMatch(/\/kinkakuji-bg\.svg$/)
+  })
+
   it('jumps to the weekly review panel after clicking the checklist button', async () => {
     const scrollIntoView = vi.fn()
     Element.prototype.scrollIntoView = scrollIntoView

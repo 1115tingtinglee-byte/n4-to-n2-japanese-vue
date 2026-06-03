@@ -1,3 +1,7 @@
+<script setup>
+const kinkakujiHeroSrc = `${import.meta.env.BASE_URL}kinkakuji-bg.svg`
+</script>
+
 <template>
   <section class="hero-section">
     <div class="hero-copy">
@@ -12,9 +16,21 @@
         <RouterLink class="secondary-link" to="/practice">先做互動測驗</RouterLink>
       </div>
     </div>
-    <figure class="hero-visual">
-      <img src="../assets/roadmap.svg" alt="N4 到 N2 學習路線插圖" />
-      <figcaption>先補基礎，再把文法、閱讀、聽力整合成考試能力。</figcaption>
+    <figure class="hero-visual kinkakuji-hero-visual" aria-label="金閣寺風格主視覺">
+      <div class="kinkakuji-hero-card">
+        <img :src="kinkakujiHeroSrc" alt="金閣寺風格的日式建築插畫" />
+        <div class="hero-route-card">
+          <span>京都金色學習路線</span>
+          <strong>N4 → N3 → N2</strong>
+          <small>每週複習、練習題、錯題整理一起前進</small>
+        </div>
+        <ol class="level-path" aria-label="日文升級階段">
+          <li>N4 基礎盤點</li>
+          <li>N3 橋接整理</li>
+          <li>N2 文法閱讀</li>
+        </ol>
+      </div>
+      <figcaption>用金閣寺風格主視覺，把學習路線做成更有日本感的目標卡。</figcaption>
     </figure>
   </section>
 
