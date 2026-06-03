@@ -24,15 +24,15 @@
   </section>
 
   <section class="lesson-grid">
-    <LessonCard v-for="item in filteredRoadmap" :key="item.week" :item="item" @select="selected = item" />
+    <LessonCard v-for="item in filteredRoadmap" :key="item.week" :item="item" @select="selectWeek" />
   </section>
 
-  <section v-if="selected" class="panel detail-panel">
+  <section v-if="selected" ref="detailPanel" class="panel detail-panel" tabindex="-1">
     <div class="detail-header">
       <div>
-      <p class="eyebrow">第 {{ selected.week }} 週檢核</p>
-      <h2>{{ selected.title }}</h2>
-      <p>{{ selected.checkpoint }}</p>
+        <p class="eyebrow">第 {{ selected.week }} 週檢核</p>
+        <h2>{{ selected.title }}</h2>
+        <p>{{ selected.checkpoint }}</p>
       </div>
       <a :href="selected.video" target="_blank" rel="noreferrer">觀看相關影片搜尋結果</a>
     </div>
@@ -55,13 +55,21 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, nextTick, ref } from 'vue'
 import LessonCard from '../components/LessonCard.vue'
 import { roadmap } from '../data/curriculum.js'
 
 const keyword = ref('')
 const levelFilter = ref('全部')
 const selected = ref(null)
+const detailPanel = ref(null)
+
+const selectWeek = async (item) => {
+  selected.value = item
+  await nextTick()
+  detailPanel.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  detailPanel.value?.focus({ preventScroll: true })
+}
 
 const filteredRoadmap = computed(() => {
   const text = keyword.value.trim().toLowerCase()

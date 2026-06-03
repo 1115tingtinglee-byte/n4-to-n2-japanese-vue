@@ -1,7 +1,8 @@
 import { mount } from '@vue/test-utils'
 import { createMemoryHistory, createRouter } from 'vue-router'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import App from './App.vue'
+import RoadmapView from './views/RoadmapView.vue'
 import { routes } from './router.js'
 import { grammarPatterns, quizQuestions, roadmap, resources } from './data/curriculum.js'
 
@@ -27,5 +28,17 @@ describe('N4 to N2 teaching site', () => {
     expect(wrapper.text()).toContain('N4 → N2 日文升級教室')
     expect(wrapper.text()).toContain('學習路線')
     expect(wrapper.text()).toContain('互動練習')
+  })
+
+  it('jumps to the weekly review panel after clicking the checklist button', async () => {
+    const scrollIntoView = vi.fn()
+    Element.prototype.scrollIntoView = scrollIntoView
+
+    const wrapper = mount(RoadmapView)
+    await wrapper.get('button').trigger('click')
+
+    expect(wrapper.text()).toContain('重點複習')
+    expect(wrapper.text()).toContain('練習題')
+    expect(scrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' })
   })
 })
