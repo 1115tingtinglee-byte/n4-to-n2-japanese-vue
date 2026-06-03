@@ -12,11 +12,16 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background:
+  background-image:
+    linear-gradient(rgba(255, 248, 245, 0.35), rgba(255, 248, 245, 0.62)),
+    url('/n4-to-n2-japanese-vue/kinkakuji-bg.svg'),
     radial-gradient(circle at 86% 10%, rgba(188, 0, 45, 0.18) 0 7rem, transparent 7.1rem),
     radial-gradient(circle at 10% 12%, rgba(251, 207, 232, 0.45), transparent 26rem),
-    radial-gradient(circle at 75% 80%, rgba(255, 237, 213, 0.72), transparent 28rem),
     linear-gradient(135deg, #fff8f5 0%, #fff1f2 42%, #f8fafc 100%);
+  background-position: center, center top, 86% 10%, 10% 12%, center;
+  background-repeat: no-repeat;
+  background-size: cover, min(1380px, 118vw) auto, auto, auto, cover;
+  background-attachment: fixed;
 }
 
 a { color: inherit; }

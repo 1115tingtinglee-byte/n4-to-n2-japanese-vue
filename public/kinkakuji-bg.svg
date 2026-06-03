@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="金閣寺風格的日式建築背景插畫">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7ed" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffe4e6" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7b2"/>
+      <stop offset="0.38" stop-color="#f7c948"/>
+      <stop offset="0.72" stop-color="#d99a1e"/>
+      <stop offset="1" stop-color="#fff1a8"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b2f2f"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fed7aa" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fbcfe8" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="18" flood-color="#7f1d1d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <g opacity="0.45" filter="url(#blur)">
+    <circle cx="1220" cy="128" r="94" fill="#be123c" opacity="0.18"/>
+    <circle cx="310" cy="160" r="18" fill="#f9a8d4"/>
+    <circle cx="358" cy="106" r="13" fill="#fda4af"/>
+    <circle cx="1318" cy="252" r="16" fill="#fda4af"/>
+    <circle cx="1370" cy="204" r="11" fill="#f9a8d4"/>
+  </g>
+
+  <g opacity="0.5">
+    <path d="M0 562 C160 500 280 522 430 548 C570 574 690 480 830 522 C998 574 1132 500 1600 548 L1600 900 L0 900 Z" fill="#fecdd3" opacity="0.35"/>
+    <path d="M0 612 C220 558 438 600 590 628 C760 660 1040 562 1600 612 L1600 900 L0 900 Z" fill="#fed7aa" opacity="0.28"/>
+  </g>
+
+  <g transform="translate(760 170)" filter="url(#softShadow)">
+    <!-- rear garden -->
+    <g opacity="0.62">
+      <path d="M-458 462 C-360 412 -260 404 -160 438 C-40 478 86 400 190 432 C300 466 430 438 530 394 L530 525 L-458 525 Z" fill="#14532d" opacity="0.24"/>
+      <path d="M-520 476 C-390 430 -290 440 -168 468 C-30 500 74 440 196 458 C328 478 442 452 564 414" fill="none" stroke="#166534" stroke-width="18" stroke-linecap="round" opacity="0.18"/>
+    </g>
+
+    <!-- pavilion reflection/lake -->
+    <ellipse cx="70" cy="620" rx="610" ry="112" fill="url(#lake)"/>
+    <g opacity="0.22" transform="translate(0 870) scale(1 -0.55)">
+      <path d="M-295 272 L-238 220 L-190 272 Z" fill="url(#roof)"/>
+      <path d="M-240 272 H330 V334 H-240 Z" fill="url(#gold)"/>
+      <path d="M-284 342 L-196 292 H394 L478 342 Z" fill="url(#roof)"/>
+      <path d="M-176 342 H382 V430 H-176 Z" fill="url(#gold)"/>
+      <path d="M-238 438 L-150 374 H440 L536 438 Z" fill="url(#roof)"/>
+      <path d="M-116 438 H396 V540 H-116 Z" fill="url(#gold)"/>
+    </g>
+
+    <!-- Kinkaku-ji inspired golden pavilion -->
+    <g transform="translate(-30 0)">
+      <path d="M40 98 L72 54 L102 98 Z" fill="#7f1d1d"/>
+      <path d="M-338 154 L74 28 L492 154 C374 138 266 132 64 132 C-142 132 -232 140 -338 154 Z" fill="url(#roof)"/>
+      <path d="M-258 154 H420 V232 H-258 Z" fill="url(#gold)" stroke="#9a6b0f" stroke-width="4"/>
+      <g stroke="#7f1d1d" stroke-opacity="0.46" stroke-width="4">
+        <path d="M-202 154 V232"/><path d="M-140 154 V232"/><path d="M-78 154 V232"/><path d="M-16 154 V232"/>
+        <path d="M46 154 V232"/><path d="M108 154 V232"/><path d="M170 154 V232"/><path d="M232 154 V232"/><path d="M294 154 V232"/><path d="M356 154 V232"/>
+      </g>
+      <path d="M-320 246 C-172 194 286 194 488 246 L540 260 C330 236 -130 236 -382 260 Z" fill="url(#roof)"/>
+      <path d="M-210 260 H460 V372 H-210 Z" fill="url(#gold)" stroke="#9a6b0f" stroke-width="4"/>
+      <g stroke="#7f1d1d" stroke-opacity="0.42" stroke-width="5">
+        <path d="M-156 260 V372"/><path d="M-92 260 V372"/><path d="M-28 260 V372"/><path d="M36 260 V372"/>
+        <path d="M100 260 V372"/><path d="M164 260 V372"/><path d="M228 260 V372"/><path d="M292 260 V372"/><path d="M356 260 V372"/>
+      </g>
+      <path d="M-274 388 C-126 308 332 312 566 388 L636 410 C350 374 -96 374 -348 410 Z" fill="url(#roof)"/>
+      <path d="M-164 410 H504 V540 H-164 Z" fill="url(#gold)" stroke="#9a6b0f" stroke-width="4"/>
+      <g stroke="#7f1d1d" stroke-opacity="0.38" stroke-width="5">
+        <path d="M-104 410 V540"/><path d="M-38 410 V540"/><path d="M28 410 V540"/><path d="M94 410 V540"/>
+        <path d="M160 410 V540"/><path d="M226 410 V540"/><path d="M292 410 V540"/><path d="M358 410 V540"/><path d="M424 410 V540"/>
+      </g>
+      <path d="M-208 540 H548 V566 H-208 Z" fill="#7f1d1d" opacity="0.55"/>
+      <path d="M-240 566 H576 V590 H-240 Z" fill="#3b2f2f" opacity="0.82"/>
+    </g>
+
+    <!-- bridge/shore lines -->
+    <path d="M-520 600 C-326 570 -160 584 -12 604 C186 632 356 614 620 566" fill="none" stroke="#7f1d1d" stroke-width="8" stroke-linecap="round" opacity="0.16"/>
+    <path d="M-560 646 C-332 626 -168 642 -4 664 C196 692 380 664 646 624" fill="none" stroke="#be123c" stroke-width="5" stroke-linecap="round" opacity="0.14"/>
+  </g>
+</svg>
